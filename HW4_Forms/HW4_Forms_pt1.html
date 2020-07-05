@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW_Forms</title>
+</head>
+
+<body>
+    <table width="700">
+        <col width="50%">
+        <col width="50%">
+        <tbody>
+            <tr>
+                <td valign="top">
+                    <b>Простая форма поиска с вариантами:</b>
+                    <form action="http://fe.it-academy.by/TestForm.php" method="GET" target="_blank">
+                        <fieldset>
+                            <legend>Cтрока поиска</legend>
+                            <input type="text" name="search" maxlength="10">
+                            <label for=""></label>
+                            <input type="submit" value="Искать">
+                            <br>
+                            <input type="radio" name="onsite"> на сайте
+                            <input type="radio" name="ongoo"> в google
+                            <br>
+                            <i>Длина запроса не более 10 символов</i>
+                        </fieldset>
+                    </form>
+                </td>
+                <td valign="top">
+                    <b>Простая форма поиска с вариантами 2:</b>
+                    <form action="http://fe.it-academy.by/TestForm.php" method="GET" target="_blank">
+                        <fieldset>
+                            <legend>Cтрока поиска</legend>
+                            <input type="text" name="search" maxlength="10" placeholder="Обязательное поле" required>*
+                            <input type="submit" value="Искать" id="search">
+                            <br>
+                            <input type="radio" name="onsite"> на сайте
+                            <input type="radio" name="ongoo"> в google
+                            <br>
+                            <i>*-обязательное поле</i>
+                            <br>
+                            <Label for="search"><i>Автовокус в поле поиска</i></Label>
+                        </fieldset>
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top">
+                    <b>Простая форма авторизации</b>
+                    <form action="http://fe.it-academy.by/TestForm.php" method="POST" target="_blank">
+                    <fieldset>
+                        <legend>Авторизуйтесь</legend>
+                        <input type="text" name="login3" required>* Логин<br>
+                        <input type="text" name="pass3" required>* Пароль<br>
+                        <input type="checkbox" name="ch2-1"> Оставаться в системе <br>
+                        <input type="submit" value="Войти"> <br>
+                        <i>*-обязательное поле</i>
+                    </fieldset>
+                    </form>
+
+                </td>
+                <td valign="top">
+                    <b>Опрос (голосование)</b>
+                    <form action="http://fe.it-academy.by/TestForm.php" method="POST" target="_blank">
+                        <fieldset>
+                            <legend>Как вам?</legend>
+                            <input type="radio" name="ra3" value="ra3_1"> Нищтяг <br>
+                            <input type="radio" name="ra3" value="ra3_2"> Ничо так <br>
+                            <input type="radio" name="ra3" value="ra3_3"> Голова болит <br>
+                            <input type="radio" name="ra3" value="ra3_4"> Уже нормально <br>
+                            <input type="submit" value="Отправить"> <br>
+                            <i>Есть скрытое поле</i>
+                        </fieldset>
+                    </form>
+
+
+
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+
+
+
+                </td>
+                <td>
+
+
+
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+
+
+
+                </td>
+                <td>
+
+
+
+
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+
+</html>
