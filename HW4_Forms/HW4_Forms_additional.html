@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms additional</title>
+</head>
+<body>
+    <form action="http://fe.it-academy.by/TestForm.php" method="POST" target="_blank"></form>
+        <fieldset>
+            <legend>Личные данные</legend>
+            <input type="text" placeholder="Фамилия" required maxlength="25" name="famil" pattern="[А-Яа-яЁё]{,25}" size="25">
+            text: Только кириллица без пробелов, длина поля 25, обязательное поле, автофокус на данном поле).
+            <br>
+            <input type="text" placeholder="Имя" required maxlength="20" name="nam" pattern="[А-Яа-яЁё]{,20}" size="25">
+            text: Только кириллица без пробелов, длина поля 20, обязательное поле).
+            <br>
+            <input type="text" placeholder="Отчество" required maxlength="24" name="famil" pattern="[А-Яа-яЁё]{,24}" size="25">
+            text: Только кириллица без пробелов, длина поля 24, обязательное поле).
+            <br>
+            <label for="famil"></label>
+
+            <fieldset>
+                <Legend>Паспортные данные</Legend>
+                text: Серия только заглавные буквы длиной 2 и максимальным количеством символов 2, количество букв не менее 2, <br>
+                обязательное поле. <br>
+                text: Номер паспорта - только цифры с длиной 7 и максимальным количеством символов 7, количество символов не менее 7, обязателоьное поле.<br>
+                <input type="text" pattern="[A-Z]{2,}" maxlength="2" size="2" required>
+                <input type="text" pattern="[0-9]{7,}" maxlength="7" size="7" required>
+            </fieldset>
+            <fieldset>
+                <legend>Дата рождения</legend>
+                <input type="text" pattern="[0-9]{4,}" maxlength="4" size="4"> Год рождения 4 цифры <br>
+                <select name="month" id="selmon">
+                    <option value="Январь">Январь</option>
+                    <option value="Февраль">Февраль</option>
+                    <option value="Март">Март</option>
+                    <option value="Апрель">Апрель</option>
+                    <option value="Май">Май</option>
+                    <option value="Июнь">Июнь</option>
+                    <option value="Июль">Июль</option>
+                    <option value="Август">Август</option>
+                    <option value="Сентябрь">Сентябрь</option>
+                    <option value="Октябрь">Октябрь</option>
+                    <option value="Ноябрь">Ноябрь</option>
+                    <option value="Декабрь">Декабрь</option>
+                </select>
+                <br>
+                <input type="number" size="3" min="1" max="31" step="1" name="dat" value="1">
+            </fieldset>
+            <select name="nation" id="nationid" required>
+                <option value="Белорус">Белорус</option>
+                <option value="Чатланин">Чатланин</option>
+                <option value="Пацак">Пацак</option>
+            </select>
+            
+
+
+
+
+
+
+
+
+
+
+        </fieldset>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
