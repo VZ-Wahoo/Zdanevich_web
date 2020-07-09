@@ -51,14 +51,14 @@
                 <td valign="top">
                     <b>Простая форма авторизации:</b>
                     <form action="http://fe.it-academy.by/TestForm.php" method="POST" target="_blank">
-                    <fieldset>
-                        <legend>Авторизуйтесь</legend>
-                        <input type="text" name="login3" required>* Логин<br>
-                        <input type="text" name="pass3" required>* Пароль<br>
-                        <input type="checkbox" name="ch2-1"> Оставаться в системе <br>
-                        <input type="submit" value="Войти"> <br>
-                        <i>*-обязательное поле</i>
-                    </fieldset>
+                        <fieldset>
+                            <legend>Авторизуйтесь</legend>
+                            <input type="text" name="login3" required>* Логин<br>
+                            <input type="text" name="pass3" required>* Пароль<br>
+                            <input type="checkbox" name="ch2-1"> Оставаться в системе <br>
+                            <input type="submit" value="Войти"> <br>
+                            <i>*-обязательное поле</i>
+                        </fieldset>
                     </form>
 
                 </td>
@@ -125,11 +125,11 @@
                     <form action="http://fe.it-academy.by/TestForm.php" method="POST" enctype="multipart/form-data">
                         <fieldset>
                             <legend>Upload</legend>
-                                Файл: <br>
-                                <input type="file" name="file7" required> <br>
-                                Срок хранения (года): <br>
-                                <input type="text" name="years7" size="4" pattern="[0-9]{1,4}">
-                                <input type="submit" value="Загрузить">
+                            Файл: <br>
+                            <input type="file" name="file7" required> <br>
+                            Срок хранения (года): <br>
+                            <input type="text" name="years7" size="4" pattern="[0-9]{1,4}">
+                            <input type="submit" value="Загрузить">
                         </fieldset>
                     </form>
                 </td>
@@ -138,7 +138,8 @@
                     <form action="http://fe.it-academy.by/TestForm.php" method="POST" enctype="multipart/form-data">
                         <fieldset>
                             <legend>Строка поиска</legend>
-                            <input type="text" pattern="^[А-Яа-яЁё\s]+$" placeholder="Только русские буквы" name="Русспоиск"><br>
+                            <input type="text" pattern="^[А-Яа-яЁё\s]+$" placeholder="Только русские буквы"
+                                name="Русспоиск"><br>
                             <i>Телефонный номер в формате <br> +XXX-XX-XXXXXXX, где X-любое число</i>
                             <input type="text" name="phone" pattern="^[+][0-9]{3}[-][0-9]{2}[-][0-9]{7}$"> <br>
                             <input type="submit" value="Проверить">
