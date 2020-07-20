@@ -1,12 +1,23 @@
-@media all and (min-width: 750px)
-{
-        div.MenuLevel1 { width: 150px;  }
-        div.MenuLevel1 > div { background-color: yellowgreen; border: solid blue 1px;
-                         position: relative; cursor: pointer; float: left;}
-        div.MenuLevel2 { width: 150px; display: none }
-        div.MenuLevel2 > div { background-color: cyan; border: solid blue 1px; 
-                        cursor: pointer }
-        div.MenuLevel1 > div:hover div.MenuLevel2 { display: block; position: absolute;
-                         left: 80%; top: 90%; z-index: 1 }
-
+@media all and (min-width: 900px){
+    ul{
+        list-style-type: none;
+    }
+    ul.lvl_1> li{
+    width: 150px; border: solid 1px; background-color: yellow;  cursor: pointer; float: left;
+    }
+    ul.lvl2 {display: none}
+    ul.lvl2 > li{
+    width: 150px; border: solid 1px; background-color: yellowgreen; cursor: pointer; 
+    }
+    ul.lvl_1 > li:hover{ background-color: violet;
+    }
+    ul.lvl_1 > li:hover > ul.lvl2 {
+        display: block; border-bottom: none; position: absolute;
+    }
+    ul.lvl2 > li:hover{
+        background-color: violet
+    }
+    .fin {
+        border-bottom: 1px solid;
+    }
 }
