@@ -1,0 +1,23 @@
+@media all and (min-width: 900px){
+    ul{
+        list-style-type: none;
+    }
+    ul.lvl_1> li{
+    width: 150px; border: solid 1px; background-color: yellow;  cursor: pointer; float: left;
+    }
+    ul.lvl2 {display: none}
+    ul.lvl2 > li{
+    width: 150px; border: solid 1px; background-color: yellowgreen; cursor: pointer; 
+    }
+    ul.lvl_1 > li:hover{ background-color: violet;
+    }
+    ul.lvl_1 > li:hover > ul.lvl2 {
+        display: block; border-bottom: none; position: absolute;
+    }
+    ul.lvl2 > li:hover{
+        background-color: violet
+    }
+    .fin {
+        border-bottom: 1px solid;
+    }
+}

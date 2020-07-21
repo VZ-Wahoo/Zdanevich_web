@@ -1,0 +1,15 @@
+.pictoright {
+    float: right;
+}
+.buttcenter {
+    position:absolute;
+    left:0;
+    right:0;
+    margin:auto
+}
+.buttleft {
+    float:left;
+}
+.buttright {
+    float: right
+}
